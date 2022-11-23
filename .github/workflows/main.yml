@@ -17,12 +17,12 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish ChatApplication.sln -c Release -o release --nologo
 
-    # changes the base-tag in index.html from '/' to 'BlazorChatApplication' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to BlazorChatApplication
       run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorChatApplication\/" \/>/g' release/wwwroot/index.html
+
+    - name: Include javascript to support SPA on GitHub page
       run: sed -i 's/<div id="app">Loading...<\/div>/<div id="app">Loading...<\/div><script src="spa-github-pages.js">/g' release/wwwroot/index.html
-    
-    # copy index.html to 404.html to serve the same file when a file is not found
+
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
 
