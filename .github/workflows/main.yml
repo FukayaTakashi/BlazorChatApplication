@@ -16,11 +16,11 @@ jobs:
         dotnet-version: 6.0
   
     - name: Publish .NET Core Project
-      run: dotnet publish ChatApplication.sln -c Release -p:GHPages=true -o release --nologo
+      run: dotnet publish ChatApplication.sln -c Release -p:GHPages=true -o public --nologo
 
     - name: Commit wwwroot to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4.4.1
+      uses: peaceiris/actions-gh-pages@v3.9.0
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: release/gh-pages
-        FOLDER: release/wwwroot
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: public/wwwroot
+        force_orphan: true
