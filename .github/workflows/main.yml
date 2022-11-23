@@ -20,6 +20,7 @@ jobs:
     # changes the base-tag in index.html from '/' to 'BlazorChatApplication' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to BlazorChatApplication
       run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorChatApplication\/" \/>/g' release/wwwroot/index.html
+      run: sed -i 's/<div id="app">Loading...<\/div>/<div id="app">Loading...<\/div><script src="spa-github-pages.js">/g' release/wwwroot/index.html
     
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
