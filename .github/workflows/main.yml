@@ -21,7 +21,7 @@ jobs:
       run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorChatApplication\/" \/>/g' release/wwwroot/index.html
 
     - name: Include javascript to support SPA on GitHub page
-      run: sed -i 's/<div id="app">Loading...<\/div>/<div id="app">Loading...<\/div><script src="spa-github-pages.js">/g' release/wwwroot/index.html
+      run: sed -i 's/<div id="app">Loading...<\/div>/<div id="app">Loading...<\/div><script src="spa-github-pages.js"><\/script>/g' release/wwwroot/index.html
 
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
