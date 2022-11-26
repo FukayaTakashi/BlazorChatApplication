@@ -1,4 +1,7 @@
 name: Deploy to GitHub Pages
+env:
+  PUBLISH_DIR: publish/wwwroot
+
 on:
   push:
     branches:
@@ -9,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v3.0.3
       with:
@@ -16,11 +20,19 @@ jobs:
         dotnet-version: 6.0.x
   
     - name: Publish .NET Core Project
-      run: dotnet publish ChatApplication.sln -c Release -p:GHPages=true -o publish --nologo
+      run: dotnet publish ChatApplication.sln -c Release -o publish --nologo
 
-    - name: Commit wwwroot to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Rewrite base href
+      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: publish/wwwroot
-        force_orphan: true
+        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        base_href: /BlazorChatApplication/
+
+    - name: GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1.5.1
+      with:
+        target_branch: gh-pages
+        build_dir: ${{ env.PUBLISH_DIR }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
