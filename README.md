@@ -1,2 +1,0 @@
-# BlazorChatApplication
-Blazor WebAssembly版チャットアプリ
