@@ -28,7 +28,7 @@ jobs:
       run: dotnet publish ChatApplication.sln -c Release -o release --nologo
 
     - name: Rewrite base href
-      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorChatApplication\/" \/>/g' ChatApplication/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorChatApplication\/" \/>/g' release/wwwroot/index.html
 
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
