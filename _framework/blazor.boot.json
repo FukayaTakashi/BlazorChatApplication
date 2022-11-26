@@ -2,13 +2,12 @@
   "cacheBootResources": true,
   "config": [ ],
   "debugBuild": false,
-  "entryAssembly": "ChatApplication.Client",
+  "entryAssembly": "ChatApplication",
   "icuDataMode": 2,
   "linkerEnabled": true,
   "resources": {
     "assembly": {
-      "ChatApplication.Client.dll": "sha256-s8Y1x+tx6W7SjDHNAgiiiBKuDXuHEeuWFtC3nNsJY5E=",
-      "ChatApplication.Shared.dll": "sha256-\/CGIDRGPk+VHyFPlisksr9WBqnMuaGucMkAJgGqtz4Q=",
+      "ChatApplication.dll": "sha256-vRQQLBP9VX+irffiTLXVM47a9ME91dC6BDCKzs\/1HtI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-1xsuOeYzA0IrmHMiJPEVvwVNDqU1O0gFYiJHgY9QhaM=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-eJD83FRQvz4SIIRROxybH24yTv0YbDVo4VEwFqd8Wr8=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-OuF3PtqJ0AQyftLXwGLYpmtHPsGz9bvqyNn3WIbe1hc=",
@@ -44,13 +43,13 @@
     "libraryInitializers": null,
     "pdb": null,
     "runtime": {
-      "dotnet.6.0.11.kkozqje1hq.js": "sha256-QwbvFAos4f24dT\/JgHSxTpcRSb\/9ckFPBOkz+bqB3gI=",
-      "dotnet.wasm": "sha256-W1IcMUiv2\/cTUknFCCNTlb4JcHF6\/0I300Tl3S8dSjc="
+      "dotnet.6.0.11.p8gn2990v9.js": "sha256-WuWPsUUtYm32VM92\/koogWR2gO+iquWK02JAFgcPqjM=",
+      "dotnet.wasm": "sha256-zEGzVOAOwoNSaMg8OQUlpygdEL+u7n2jkybHa1ejJVA="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-W1IcMUiv2\/cTUknFCCNTlb4JcHF6\/0I300Tl3S8dSjc="
+        "hash": "sha256-zEGzVOAOwoNSaMg8OQUlpygdEL+u7n2jkybHa1ejJVA="
       }
     },
     "satelliteResources": null
