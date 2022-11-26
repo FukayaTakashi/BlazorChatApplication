@@ -177,7 +177,7 @@
       "url": "css\/open-iconic\/font\/css\/open-iconic-bootstrap.min.css"
     },
     {
-      "hash": "sha256-hrA6L8y6lIwkLQGsIGKfwONAxuJ0Ulj+8ZrGv0YuRME=",
+      "hash": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh\/chSkSvQpc=",
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.eot"
     },
     {
@@ -185,11 +185,11 @@
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.otf"
     },
     {
-      "hash": "sha256-oUpLdS+SoLJFwf4bzA3iKD7TCm66oLkTpAQlVJ2s1wc=",
+      "hash": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.svg"
     },
     {
-      "hash": "sha256-UxKwWG\/BsQFaRH\/KCKRRleQgjhCuaugI8i6ClBoMQlE=",
+      "hash": "sha256-p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=",
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.ttf"
     },
     {
@@ -213,15 +213,15 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-pwX7RqciwIZjJrcLNSXGhb5voJX95RR8QjxJI2515lM=",
+      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
       "url": "icon-192.png"
     },
     {
-      "hash": "sha256-HcV1Ak69n9y+N8pHgggzhQeP8rLDB7WFsfxI9UM5DpM=",
+      "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-EhJiL+PYL6Uwpto14u5OnHEMK0VfqGRoejF2+KqG4D4=",
+      "hash": "sha256-50tCCjVao0MQKta2m52XM6\/KxN6z\/s4b7ZVSXpnkuaI=",
       "url": "index.html"
     },
     {
@@ -229,5 +229,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "ngnBf8h5"
+  "version": "uIp6mmo5"
 };
