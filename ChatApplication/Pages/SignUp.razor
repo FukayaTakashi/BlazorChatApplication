@@ -1,0 +1,36 @@
+﻿@page "/SignUp"
+@using ChatApplication.Domain.Repositories;
+@using ChatApplication.ViewModels;
+@inject IDataRepository DataRepository
+@inject NavigationManager NavigationManager
+
+<h3>ユーザ登録</h3>
+
+@if (_viewModel != null)
+{
+    <EditForm Model="@_viewModel" OnValidSubmit="@OnValidSubmit">
+        <DataAnnotationsValidator />
+        <InputText placeholder="ユーザID" class="form-control" @bind-Value="@_viewModel.FormUserEntity.UserId"></InputText>
+        <InputText placeholder="ユーザ名" class="form-control" @bind-Value="@_viewModel.FormUserEntity.UserName"></InputText>
+        <InputText type="password" placeholder="パスワード" class="form-control" @bind-Value="@_viewModel.FormUserEntity.UserPasswordHash"></InputText>
+        <button type="submit" class="btn btn-primary">登録</button>
+        <ValidationSummary />
+    </EditForm>
+}
+
+<a class="btn btn-secondary" href="/">ログイン画面へ</a>
+
+@code {
+    private SignUpViewModel? _viewModel;
+
+    protected override void OnInitialized()
+    {
+        _viewModel = new(DataRepository);
+    }
+
+    private void OnValidSubmit()
+    {
+        _viewModel?.SignUp();
+        NavigationManager.NavigateTo("/");
+    }
+}

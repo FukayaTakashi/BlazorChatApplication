@@ -1,0 +1,37 @@
+﻿@using ChatApplication.Domain.Entities;
+@using ChatApplication.Domain.Repositories;
+@using ChatApplication.ViewModels;
+@inject IDataRepository DataRepository
+@inject SessionDataContainer SessionDataContainer
+@inject IJSRuntime JSRuntime
+
+<EditForm Model="@_viewModel" OnValidSubmit="@OnValidSubmit">
+    <DataAnnotationsValidator />
+    <InputText placeholder="ユーザID" class="form-control" @bind-Value="@_viewModel.FormUserEntity.UserId"></InputText>
+    <InputText type="password" placeholder="パスワード" class="form-control" @bind-Value="@_viewModel.FormUserEntity.UserPasswordHash"></InputText>
+    <button type="submit" class="btn btn-primary">サインイン</button>
+    <ValidationSummary />
+</EditForm>
+
+@code {
+    private SignInViewModel? _viewModel;
+
+    protected override void OnInitialized()
+    {
+        _viewModel = new(DataRepository);
+    }
+
+    private async Task OnValidSubmit()
+    {
+        try
+        {
+            SessionDataContainer.LoginedUser = await _viewModel.SignIn();
+            await JSRuntime.InvokeVoidAsync("prompt", "サインイン成功");
+            StateHasChanged();
+        }
+        catch
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "サインイン失敗");
+        }
+    }
+}
