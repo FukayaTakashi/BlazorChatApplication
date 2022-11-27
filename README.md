@@ -15,7 +15,7 @@ Blazor WebAssembly版チャットアプリ
         Version 17.4.1
         VisualStudio.17.Release/17.4.1+33110.190
         Microsoft .NET Framework
-        Version 4.8.04084
+        Version 4.8.09037
 
         インストールされているバージョン:Community
 
