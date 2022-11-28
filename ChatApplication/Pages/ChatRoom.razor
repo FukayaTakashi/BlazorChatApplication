@@ -1,0 +1,50 @@
+@page "/ChatRoom/{ChatRoomId}"
+@using ChatApplication.Domain.Entities;
+@using ChatApplication.Domain.Repositories;
+@using ChatApplication.ViewModels;
+@inject SessionDataContainer SessionDataContainer
+@inject IDataRepository DataRepositroy
+
+<PageTitle>チャットルーム</PageTitle>
+
+<h1>チャットルーム</h1>
+
+@if (_viewModel != null)
+{
+    <table>
+        <tbody>
+            @foreach (var chatData in _viewModel.ChatDataEntities)
+            {
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div style="display: inline-flex; justify-content: center; align-items: center;">
+        <InputText class="form-control"></InputText>
+        <button class="btn btn-primary" @onclick="Send">送信</button>
+    </div>
+}
+
+<a class="btn btn-secondary" href="/CharRoomList">戻る</a>
+
+@code {
+    [Parameter]
+    public int ChatRoomId { get; set; }
+    private ChatRoomViewModel? _viewModel;
+
+    protected override void OnInitialized()
+    {
+        if (SessionDataContainer.LoginedUser == null)
+        {
+            throw new InvalidOperationException();
+        }
+        _viewModel = new(DataRepositroy, SessionDataContainer.LoginedUser, ChatRoomId);
+    }
+
+    private void Send()
+    {
+    }
+}
