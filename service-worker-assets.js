@@ -5,7 +5,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-S4J0Ko6sYLzSMInX7oPQsEoQ6jut2CvtNAFZ7qG+eHs=",
+      "hash": "sha256-zUqmFlvkZtAZqKM+WuyKej86vV43AMRuONczEixUFdA=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -13,7 +13,7 @@
       "url": "_framework\/BouncyCastle.Crypto.dll"
     },
     {
-      "hash": "sha256-Y0yUq4b2aZsO\/bpZkN3NPSsSYsEIyfvD3xDm8G9GOKY=",
+      "hash": "sha256-RoR6FeKWpeC+vdUd36zBjjpCHF8J4x1GWKVr55LZZu8=",
       "url": "_framework\/ChatApplication.dll"
     },
     {
@@ -209,7 +209,7 @@
       "url": "_framework\/dotnet.6.0.11.p8gn2990v9.js"
     },
     {
-      "hash": "sha256-KoeOdi41gII2ZAT\/6j5cOoFwxoWqojuzsTVeD8hdvaE=",
+      "hash": "sha256-umeZHg9z2Fizk++FwWpF8LGTnK1XZiEJIYCi800EC4o=",
       "url": "_framework\/dotnet.wasm"
     },
     {
@@ -217,19 +217,19 @@
       "url": "ChatApplication.styles.css"
     },
     {
-      "hash": "sha256-9BNFtmC2+o1tsK93CpGZOK7WBUZEtP8FXfk\/XsVn8gY=",
+      "hash": "sha256-UYv1mknAFuwZsOOgHxOJOILTvxo83\/WEECRR0Vxiay4=",
       "url": ".gitattributes"
     },
     {
-      "hash": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
       "url": ".nojekyll"
     },
     {
-      "hash": "sha256-L2hfZgEI8NCPgg4lIq9IAOFunoVL+8JQfiHohYBOn9s=",
+      "hash": "sha256-iVnc4GAYnyer3L\/ZWjCULKZrcbqIUaow8iEWUzutyKA=",
       "url": "404.html"
     },
     {
-      "hash": "sha256-lDAEEaul32OkTANWkZgjgs4sFCsMdLsR5NJxrjVcXdo=",
+      "hash": "sha256-bQF09ZZOsk0T2q2MpSrJMbqdu0Ks9Ea03LFI7wJyLeU=",
       "url": "css\/app.css"
     },
     {
@@ -277,11 +277,11 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
-      "hash": "sha256-XK2ikSSAXY4EVNxbZyJbv4cHXP\/VNBjpxW9nRwgiDiw=",
+      "hash": "sha256-T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=",
       "url": "data\/users.json"
     },
     {
-      "hash": "sha256-8EnC6wNNYIcqKg8OOcOZYTjP7JT9RO2KAKzQBUvgq+M=",
+      "hash": "sha256-S7CzX87woxl0hVHVRlnmtzHK5wSd8CV1EIWPMbsae+A=",
       "url": "decode.min.js"
     },
     {
@@ -305,5 +305,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "pKgf3nBG"
+  "version": "n8vjYcR9"
 };

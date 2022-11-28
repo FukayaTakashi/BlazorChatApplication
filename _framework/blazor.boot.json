@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "BouncyCastle.Crypto.dll": "sha256-MzkDx9IqJwmORfxkt3omSqIgYFz70+MpwgDX5LQsiBw=",
-      "ChatApplication.dll": "sha256-Y0yUq4b2aZsO\/bpZkN3NPSsSYsEIyfvD3xDm8G9GOKY=",
+      "ChatApplication.dll": "sha256-RoR6FeKWpeC+vdUd36zBjjpCHF8J4x1GWKVr55LZZu8=",
       "ChatApplication.Domain.dll": "sha256-PZaYrSmYpWo0ycVoDJpmdOsN15Ox\/x\/35LpT2oJr2hU=",
       "ChatApplication.Infrastructure.dll": "sha256-jlRZ89wmt+TOIrf8Vr2AqYTmzDI1L9Dcb49rpdnV\/oU=",
       "Microsoft.AspNetCore.Components.dll": "sha256-FUnjfx7aJYmuDGXr2sFZPNjGrrPJic7MyqKEE8apETQ=",
@@ -63,12 +63,12 @@
     "pdb": null,
     "runtime": {
       "dotnet.6.0.11.p8gn2990v9.js": "sha256-p401BL2GXi84a9JKbUPvSk\/10\/rp\/FZ1iFz7m6e1fMw=",
-      "dotnet.wasm": "sha256-KoeOdi41gII2ZAT\/6j5cOoFwxoWqojuzsTVeD8hdvaE="
+      "dotnet.wasm": "sha256-umeZHg9z2Fizk++FwWpF8LGTnK1XZiEJIYCi800EC4o="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
         "behavior": "dotnetwasm",
-        "hash": "sha256-KoeOdi41gII2ZAT\/6j5cOoFwxoWqojuzsTVeD8hdvaE="
+        "hash": "sha256-umeZHg9z2Fizk++FwWpF8LGTnK1XZiEJIYCi800EC4o="
       }
     },
     "satelliteResources": null
